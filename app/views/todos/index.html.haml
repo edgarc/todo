@@ -1,0 +1,10 @@
+=form_for Todo.new, :html => { :class => "well"} do |f|
+	= f.text_field :description, :class=>"input-medium search-query", :placeholder=>"add a new todo"
+	= f.submit "Add", :class=>"btn btn-primary"
+
+%ul{:id=>"todos", :class=>"unstyled"}
+	-@todos.each do |todo|
+		%li{:id=>"todo_#{todo.id}",:class=>"completed_#{todo.complete}"}
+			%i{:class=>"icon-move"}
+			%input{:type=>"checkbox", :id=>"#{todo.id}", :checked=>todo.complete, :name=>"todo_cb"}
+			%h3=todo.description

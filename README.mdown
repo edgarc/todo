@@ -1,0 +1,18 @@
+Todo List
+=========
+
+Run Tests
+-----------
+
+* bundle exec rake db:test:clone
+* bundle exec cucumber features
+* bundle exec rake spec
+* http://localhost:3000/jasmine
+
+
+Libraries
+--------------
+
+* haml
+* jquery ui sortable
+* twitter bootstrap

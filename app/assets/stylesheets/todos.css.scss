@@ -1,0 +1,22 @@
+// Place all the styles related to the Todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  padding-top: 60px; 
+}
+
+h3{
+	display:inline;
+}
+
+.completed_true h3{
+	text-decoration:line-through;
+	color:#ccc;
+	font-style:italic
+}
+
+.icon-move{
+	cursor:move;
+}
